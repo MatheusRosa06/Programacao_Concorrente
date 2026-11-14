@@ -1,4 +1,4 @@
-# versão (i) - sem deadlock
+# Versão (i): com deadlock
 import threading
 import time
 
