@@ -31,7 +31,8 @@ Espera Circular -> O primeiro filósofo espera liberar o garfo que está com o s
 na versão filosofo-2, os problemas são corrigidos, pois se implementa o recurso que quando filósofo tenta pegar um segundo garfo que está ocupado, ele solta o primeiro garfo e tenta novamente mais tarde, assim os filósofos não ficam presos segurando um garfo aguardando infinitamente o segundo garfo ficar livre.
 
 ### Fluxograma
-...
+<img width="607" height="643" alt="diagrama dos filósofos drawio" src="https://github.com/user-attachments/assets/ca4c666a-079c-41ec-a116-4bef6db0417d" />
+
 # Parte 3 DeadLock
 
 ## Contextualização:
