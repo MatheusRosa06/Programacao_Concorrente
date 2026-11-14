@@ -1,8 +1,35 @@
 # Programacao_Concorrente
-Integrantes: Gabriel Igeski Donato
+Integrantes: Gabriel Igeski Donato, Matheus Gomes da Rosa
 
 ## Linguagem Escolhida: Python
 
+# parte 1 Jantar dos Filósofos
+
+## Contextualização:
+
+5 filósofos estão numa mesa circular, onde entre cada dupla de filósofos há um garfo e na frente de cada um tem um prato. Para que seja possível comer, o filósofo tem que pegar os dois garfos mais próximos. O problema se encontra em que não tem como todos comerem ao mesmo tempo, pois é necessário compartilhar os garfos, os filósofos precisam ficar se alternando entre diferentes estados: pensando, com fome, comendo.Então, o desafio é de sincronismo para que seja possível que todos consigam alternar seus estados de uma forma que todos possam comer.
+
+## Print do Console
+### filosofos-1
+...
+### filosofos-2
+...
+
+### Explicação COFFMAN:
+Ocorrem as 4 condições para Deadlock em filosofos-1.
+
+Exclusão Mútua -> Quando filósofo 1 pega o garfo entre ele e o filósofo 2, o filósofo 2 não consegue pegar esse mesmo garfo, pois está na mão do filosofo 1, o filósofo 2 só tem acesso ao garfo quando o filósofo 1 o liberar.
+
+Posse e Espera -> Todos os 5 filósofos pegam garfo que está à sua esquerda e ficam presos aguardando o garfo da direita
+
+Não Preempção -> Os filósofos não soltam os garfos que pegaram até conseguir executar ação de comer
+
+Espera Circular -> O primeiro filósofo espera liberar o garfo que está com o segundo filósofo, o segundo filósofo espera liberar o garfo que esta com o terceiro filósofo, e assim consecutivamente até o quinto filósofo que espera o primeiro filósofo liberar o garfo.
+
+na versão filosofo-2, os problemas são corrigidos, pois se implementa o recurso que quando filósofo tenta pegar um segundo garfo que está ocupado, ele solta o primeiro garfo e tenta novamente mais tarde, assim os filósofos não ficam presos segurando um garfo aguardando infinitamente o segundo garfo ficar livre.
+
+### Fluxogram
+...
 # Parte 3 DeadLock
 
 ## Contextualização:

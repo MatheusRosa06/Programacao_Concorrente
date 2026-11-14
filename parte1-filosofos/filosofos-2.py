@@ -8,7 +8,7 @@ N = 5
 garfos = [threading.Lock() for _ in range(N)]
 garfos_em_mao = [0, 0, 0, 0, 0]
 estados = ["pensando", "pensando", "pensando", "pensando", "pensando"]
-refeicoes = [0, 0, 0, 0, 0]  
+
 
 
 
@@ -27,9 +27,7 @@ def exist(filosofo_id):
     # filósofo está comendo
     estados[filosofo_id] = "comendo"
     print(f"Filósofo {filosofo_id + 1} está comendo")
-    refeicoes[filosofo_id] += 1
-    print(f"Filósofo {filosofo_id + 1} refeição: {refeicoes[filosofo_id]}")
-    
+      
     time.sleep(1)
 
     # liberando os garfos após comer
