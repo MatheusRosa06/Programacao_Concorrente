@@ -11,9 +11,11 @@ Integrantes: Gabriel Igeski Donato, Matheus Gomes da Rosa
 
 ## Print do Console
 ### filosofos-1
-...
+<img width="318" height="430" alt="image" src="https://github.com/user-attachments/assets/ddea1459-1444-45b6-a243-5d59b835c492" />
+
 ### filosofos-2
-...
+<img width="422" height="560" alt="image" src="https://github.com/user-attachments/assets/393daa22-c3b0-4dcf-8bfc-2a35feca8d0d" />
+
 
 ### Explicação COFFMAN:
 Ocorrem as 4 condições para Deadlock em filosofos-1.
@@ -28,7 +30,7 @@ Espera Circular -> O primeiro filósofo espera liberar o garfo que está com o s
 
 na versão filosofo-2, os problemas são corrigidos, pois se implementa o recurso que quando filósofo tenta pegar um segundo garfo que está ocupado, ele solta o primeiro garfo e tenta novamente mais tarde, assim os filósofos não ficam presos segurando um garfo aguardando infinitamente o segundo garfo ficar livre.
 
-### Fluxogram
+### Fluxograma
 ...
 # Parte 3 DeadLock
 
