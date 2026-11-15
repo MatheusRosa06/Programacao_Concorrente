@@ -3,7 +3,7 @@ Integrantes: Gabriel Igeski Donato, Matheus Gomes da Rosa, Rafael Luis Naslowski
 
 ## Linguagem Escolhida: Python
 
-### Link Youtube:
+### Link Youtube:https://youtu.be/k-eJhbLgIzM
 
 # parte 1 Jantar dos Filósofos
 
