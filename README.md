@@ -1,7 +1,9 @@
 # Programacao_Concorrente
-Integrantes: Gabriel Igeski Donato, Matheus Gomes da Rosa
+Integrantes: Gabriel Igeski Donato, Matheus Gomes da Rosa, Rafael Luis Naslowski da Silva
 
 ## Linguagem Escolhida: Python
+
+### Link Youtube:
 
 # parte 1 Jantar dos Filósofos
 
