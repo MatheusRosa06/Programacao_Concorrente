@@ -33,6 +33,23 @@ na versão filosofo-2, os problemas são corrigidos, pois se implementa o recurs
 ### Fluxograma
 <img width="607" height="643" alt="diagrama dos filósofos drawio" src="https://github.com/user-attachments/assets/ca4c666a-079c-41ec-a116-4bef6db0417d" />
 
+# Parte 2 Threads e semáforos
+## prints com semaforo
+<img width="207" height="70" alt="image" src="https://github.com/user-attachments/assets/762632b4-dee6-4e08-9a31-7b59ab3a718f" />
+<img width="192" height="73" alt="image" src="https://github.com/user-attachments/assets/9aa0155a-9baa-483c-bfac-56c589b12160" />
+<img width="197" height="70" alt="image" src="https://github.com/user-attachments/assets/18a63b02-b701-43d9-ac6e-61008ab4e5e5" />
+## prints sem semaforo
+<img width="187" height="63" alt="image" src="https://github.com/user-attachments/assets/07d682e0-0fac-4e0e-b3ac-8bb445140917" />
+<img width="193" height="70" alt="image" src="https://github.com/user-attachments/assets/a43eac86-6fdf-4726-a2f5-0e7c0c482e82" />
+<img width="200" height="67" alt="image" src="https://github.com/user-attachments/assets/945e1e04-4b4a-4f24-a75c-32778bd90482" />
+
+
+Eu notei que a versão sem sincronização não estava nunca apresentando perda de incrementos nos testes, tendo sempre o mesmo valor que o esperado. Isso pode ter acontecido por causa do GIL do CPython, que limita a execução simultânea das threads e reduz a chance de ocorrer uma condição de corrida nesse caso, por isso as imagens de teste acabam mostrando o mesmo número que o esperado.
+Mesmo assim, essa versão não é totalmente segura, pois não há garantia de que o resultado será sempre correto. 
+Já a versão que tem o semáforo garante que apenas uma thread por vez acesse o contador, que muitas threads sejam executadas ao mesmo tempo.
+O unico ponto ruim do semaforo, e que por ele executar apenas uma thread por vezes, a execução final acaba ficando mais lenta, já que as threads precisam esperar sua vez, em compensação, ele garante que as alterações feitas por uma thread sejam corretamente vistas pelas demais, mantendo a consistência dos dados.
+
+
 # Parte 3 DeadLock
 
 ## Contextualização:
